@@ -27,12 +27,12 @@ projeto-diabetes-pima/
 ## Conteúdo
 - **Relatório:** PDF do trabalho (`Projeto Aplicado I (A1).pdf`)  
 - **Datasets:** Base de dados utilizada (`datasets/pima_dataset.csv`)  
-- **Scripts:** Códigos usados na análise (a serem adicionados futuramente em `scripts/`)  
-- **Imagens:** Gráficos e figuras do trabalho (a serem adicionados futuramente em `imagens/`)  
+- **Scripts:** Códigos usados na análise (`scripts/`)  
+- **Imagens:** Gráficos e figuras do trabalho (`imagens/`)  
 
 ## Como Usar
-1. Abra o PDF `Projeto Aplicado I (A1).pdf` para consultar o relatório completo.  
-2. Para rodar os scripts (quando adicionados), será necessário ter [Python/R] instalado e as bibliotecas necessárias.  
+1. Abra o PDF `Projeto Aplicado I.pdf` para consultar o relatório completo.  
+2. Para rodar os scripts, será necessário um software/Google Colab com Python e as bibliotecas necessárias.  
 3. Os dados estão disponíveis em `datasets/`.
 
 ---
