@@ -18,7 +18,14 @@ Desenvolver um projeto aplicado de ciência de dados utilizando o **Pima Indians
 
 - Análise exploratória dos dados (**EDA**)  
 - Identificação de fatores de risco   
-- Apoio à compreensão dos padrões clínicos associados à doença  
+- Apoio à compreensão dos padrões clínicos associados à doença
+
+---
+
+## 📌 Conclusão
+
+A análise exploratória revelou que variáveis metabólicas, especialmente glicose e IMC, são os maiores indicadores de risco para diabetes tipo 2 no dataset Pima.
+Os tratamentos aplicados garantiram integridade dos dados, removendo inconsistências e criando uma base sólida para construção de modelos preditivos em etapas futuras.
 
 ---
 
