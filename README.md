@@ -32,6 +32,7 @@ Gerar visualizações de apoio
 Preparar a base para futuros modelos preditivos
 
 📁 Estrutura do Repositório
+
 projeto-diabetes-pima/
 │
 ├── README.md                         # Documentação principal do projeto
