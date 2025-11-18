@@ -1,180 +1,84 @@
-📊 Análise do risco de diabetes tipo 2 em mulheres Pima (Akimel O’odham)
-👥 Autores
+# 📊 Análise do Risco de Diabetes Tipo 2 em Mulheres Pima (Akimel O’odham)
 
-Bruno Cerqueira Gianotti | RA: 10721759
+## 👥 Autores
+- **Bruno Cerqueira Gianotti** | RA: 10721759  
+- **Daniel Fernandes Saraiva** | RA: 10381985  
+- **Gabrielle Solange Ferreira** | RA: 10414956  
+- **Reginaldo Rogério de Campos** | RA: 10743942  
 
-Daniel Fernandes Saraiva | RA: 10381985
+---
 
-Gabrielle Solange Ferreira | RA: 10414956
+## 📌 Assunto
+Este projeto investiga a relação da diabetes tipo 2 com mulheres do povo indígena Pima (Akimel O’odham), utilizando dados clínicos coletados historicamente.
 
-Reginaldo Rogério de Campos | RA: 10743942
+---
 
-🧾 Descrição do Projeto
+## 🎯 Objetivo
+Desenvolver um projeto aplicado de ciência de dados utilizando o **Pima Indians Diabetes Dataset**, realizando:
 
-Este projeto investiga fatores associados ao risco de diabetes tipo 2 em mulheres Pima, um povo indígena norte-americano, utilizando o tradicional Pima Indians Diabetes Dataset.
+- Análise exploratória dos dados (**EDA**)  
+- Identificação de fatores de risco   
+- Apoio à compreensão dos padrões clínicos associados à doença  
 
-O objetivo central é realizar uma análise exploratória detalhada, com limpeza, tratamento de dados, detecção de outliers, visualizações e identificação dos fatores mais correlacionados ao diagnóstico de diabetes (variável Outcome).
+---
 
-Este repositório faz parte da entrega do Projeto Aplicado I do curso de Banco de Dados.
+## 📁 Estrutura do Repositório
 
-🎯 Objetivo Geral
-
-Aplicar conceitos fundamentais de Ciência de Dados para:
-
-Analisar variáveis clínicas que influenciam o risco de diabetes
-
-Tratar valores inconsistentes e ausentes adequadamente
-
-Explorar relações entre fatores de saúde e o diagnóstico
-
-Gerar visualizações de apoio
-
-Preparar a base para futuros modelos preditivos
-
-📁 Estrutura do Repositório
-
+```
 projeto-diabetes-pima/
 │
-├── README.md                         # Documentação principal do projeto
+├── README.md
+│
 ├── PDFs/
-│   └── Projeto Aplicado I (A1).pdf   # Relatório completo
+│   └── Projeto Aplicado I (A4).pdf
 │
 ├── datasets/
-│   └── pima_dataset.csv              # Base de dados utilizada
+│   └── pima_dataset.csv
 │
 ├── scripts/
-│   └── eda_pima.py (futuro)          # Scripts de análise e modelagem
+│   └── analise_pima_diabetes.py
 │
 └── imagens/
-    └── (gráficos gerados)            # Visualizações da EDA
+    └── gráficos de dispersão, boxplots, histogramas, matriz etc
+```
 
-📚 Sobre o Dataset
+---
 
-O conjunto de dados contém 768 registros de pacientes do sexo feminino, com variáveis como:
+## 📘 Conteúdo do Projeto
 
-Gravidez
+### **📄 Relatório**
+O arquivo em PDF com o desenvolvimento completo do trabalho está na pasta:
 
-Glicose
+`PDFs/Projeto Aplicado I (A4).pdf`
 
-Pressão sanguínea
+### **📂 Dataset**
+Base utilizada no projeto:
 
-Espessura da dobra cutânea
+`datasets/pima_dataset.csv`
 
-Insulina
+### **📜 Scripts**
+Todos os códigos desenvolvidos ficarão armazenados em:
 
-IMC
+`scripts/`
 
-Função genética da diabetes
+### **🖼️ Imagens**
+Figuras, gráficos e visuais gerados ao longo da análise:
 
-Resultado (0 = não diabético, 1 = diabético)
+`imagens/`
 
-Source original: National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK).
+---
 
-🛠️ Metodologia e Processamento dos Dados
+## ▶️ Como Utilizar
 
-O script principal realiza:
+1. Abra o arquivo PDF para ler o relatório completo.  
+2. Para rodar o projeto, utilize **Google Colab**, **Jupyter Notebook** ou ambiente Python equivalente.  
+3. Instale as bibliotecas necessárias:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn
+   ```
+4. Os dados usados na análise estão em `datasets/pima_dataset.csv`.
 
-✔️ 1. Leitura e inspeção inicial
+---
 
-Dimensões
-
-Tipos de variáveis
-
-Estatísticas básicas
-
-✔️ 2. Tratamento de valores inválidos
-
-Substituição de valores 0 em colunas onde esse valor não é fisiologicamente plausível:
-
-Glucose, BloodPressure, SkinThickness, Insulin, BMI
-
-
-Esses zeros são convertidos para NaN.
-
-✔️ 3. Imputação de valores ausentes
-
-Estratégia híbrida:
-
-Tipo de variável	Método
-Variáveis centrais (Glucose, BloodPressure, BMI)	Mediana
-Variáveis críticas e mais variáveis (SkinThickness, Insulin)	KNN Imputer
-✔️ 4. Detecção e remoção de outliers
-
-Usando Z-score com limiar de 3 desvios padrão.
-
-✔️ 5. Análise Exploratória de Dados (EDA)
-
-Inclui:
-
-Distribuições individuais
-
-Boxplots por diagnóstico
-
-Avaliação da variável alvo
-
-Heatmap de correlação
-
-Pairplot com diferenciação por Outcome
-
-✔️ 6. Identificação dos fatores mais correlacionados
-
-Cálculo de correlação com a variável Outcome.
-
-💻 Como Executar o Projeto
-✔️ Requisitos
-
-Instale as dependências:
-
-pip install pandas numpy seaborn matplotlib scikit-learn scipy
-
-✔️ Rodando no Google Colab
-
-Faça upload do arquivo pima_dataset.csv
-
-Copie e cole o script no notebook
-
-Execute célula por célula
-
-✔️ Rodando localmente
-python seu_script.py
-
-📊 Principais Visualizações
-
-As imagens geradas pela análise (histogramas, boxplots, correlação etc.) estão na pasta:
-
-/imagens
-
-
-Exemplos:
-
-Distribuição de glicose
-
-Boxplot de IMC por diagnóstico
-
-Heatmap de correlação
-
-Pairplot segmentado por Outcome
-
-(As imagens podem ser incorporadas futuramente ao README.)
-
-🔎 Principais Insights da Análise
-
-✔ Glicose foi a variável com maior correlação positiva com diabetes
-✔ IMC e Insulina também mostraram forte associação
-✔ Outliers foram identificados em variáveis como Insulin e SkinThickness
-✔ Distribuição de Outcome é desbalanceada (maioria classe 0)
-✔ A combinação de glicose alta + IMC elevado aparece frequentemente associada ao diagnóstico positivo
-
-📌 Próximos passos
-
-Adicionar modelagem preditiva (Regressão Logística, Random Forest, XGBoost)
-
-Implementar validação cruzada
-
-Criar dashboard interativo (Streamlit ou Power BI)
-
-Refinar outliers com métodos robustos (IQR, LOF, Isolation Forest)
-
-🔗 Link para o Repositório
-
+## 🔗 Link para o Repositório
 https://github.com/BrunoCerqueiraGianotti/projeto-diabetes-pima
