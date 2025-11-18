@@ -15,7 +15,7 @@ Este projeto investiga fatores associados ao risco de diabetes tipo 2 em mulhere
 
 O objetivo central é realizar uma análise exploratória detalhada, com limpeza, tratamento de dados, detecção de outliers, visualizações e identificação dos fatores mais correlacionados ao diagnóstico de diabetes (variável Outcome).
 
-Este repositório faz parte da entrega do Projeto Aplicado I do curso de Ciência de Dados.
+Este repositório faz parte da entrega do Projeto Aplicado I do curso de Banco de Dados.
 
 🎯 Objetivo Geral
 
