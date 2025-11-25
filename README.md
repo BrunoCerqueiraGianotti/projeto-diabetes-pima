@@ -38,7 +38,8 @@ projeto-diabetes-pima/
 │
 ├── PDFs/
 │   └── Projeto Aplicado I (A4).pdf
-│
+│   └── Projeto Aplicado I - Apresentacao.pdf
+|
 ├── datasets/
 │   └── pima_dataset.csv
 │
@@ -54,7 +55,7 @@ projeto-diabetes-pima/
 ## 📘 Conteúdo do Projeto
 
 ### **📄 Relatório**
-O arquivo em PDF com o desenvolvimento completo do trabalho está na pasta:
+O arquivo em PDF com o desenvolvimento completo do trabalho e arquivo de apresentação está na pasta:
 
 `PDFs/Projeto Aplicado I (A4).pdf`
 
@@ -89,3 +90,8 @@ Figuras, gráficos e visuais gerados ao longo da análise:
 
 ## 🔗 Link para o Repositório
 https://github.com/BrunoCerqueiraGianotti/projeto-diabetes-pima
+
+---
+
+## 🔗 Link para o Vídeo de Apresentação
+https://youtu.be/lbPVzBfF6ks?si=r24vvP8JgyzRyhg_
